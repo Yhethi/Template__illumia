@@ -8,7 +8,7 @@ export const AudioT = () => {
       <div className="audio__cards tools__cards">
         {audioTools.map((item: any, key: number) => {
           return (
-            <a key={key} href={item.goTo} target="_blank">
+            <a key={key} href={item.goTo} target="_blank" data-aos="zoom-out">
               <div className="audio__card tools__card">
                 <div className="audio__card__top tools__card__top">
                   <img src={item.img} alt={item.img} />

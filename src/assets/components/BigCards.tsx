@@ -8,7 +8,7 @@ import { HiArrowSmRight } from "react-icons/hi";
 export const BigCards = () => {
   return (
     <div className="bigCards__global">
-      <div className="bigCards">
+      <div className="bigCards" data-aos="zoom-in">
         <div className="blueBigCard bigCards__card">
           <div className="bigCards__content">
             <div className="bigCards__logo">

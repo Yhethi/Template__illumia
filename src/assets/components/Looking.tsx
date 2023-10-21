@@ -5,7 +5,7 @@ import partPage from "./../body/6_looking/partPage.png";
 export const Looking = () => {
   return (
     <div className="looking__global">
-      <div className="looking__text">
+      <div className="looking__text" data-aos="zoom-in-right">
         <p>
           Didn't find what you were looking for? Let us know and we will try to
           build it.
@@ -16,7 +16,7 @@ export const Looking = () => {
           </a>
         </div>
       </div>
-      <div className="looking_img">
+      <div className="looking_img" data-aos="zoom-in-left">
         <img src={partPage} alt={partPage} />
       </div>
     </div>

@@ -8,7 +8,7 @@ export const VideoT = () => {
       <div className="video__cards tools__cards">
         {videoTools.map((item: any, key: number) => {
           return (
-            <a key={key} href={item.goTo} target="_blank">
+            <a key={key} href={item.goTo} target="_blank" data-aos="zoom-out">
               <div className="video__card tools__card">
                 <div className="video__card__top tools__card__top">
                   <img src={item.img} alt={item.img} />

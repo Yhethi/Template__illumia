@@ -8,7 +8,7 @@ export const ImageT = () => {
       <div className="image__cards tools__cards">
         {imageTools.map((item: any, key: number) => {
           return (
-            <a key={key} href={item.goTo} target="_blank">
+            <a key={key} href={item.goTo} target="_blank" data-aos="zoom-out">
               <div className="image__card tools__card">
                 <div className="image__card__top tools__card__top">
                   <img src={item.img} alt={item.img} />

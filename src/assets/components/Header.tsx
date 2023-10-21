@@ -70,7 +70,6 @@ export const Header = () => {
     if (window.innerWidth <= 1200) {
       setIsMobile(true);
     }
-
   }, []);
   useEffect(() => {
     showTemplates();
@@ -82,7 +81,7 @@ export const Header = () => {
           <img src={illumiaLogo} alt={illumiaLogo} />
         </a>
       </div>
-      <div className="menu">
+      <div className="menu" data-aos="fade-down">
         <ul>
           {isMobile ? (
             <>
