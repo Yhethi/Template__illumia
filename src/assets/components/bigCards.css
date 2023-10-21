@@ -1,0 +1,117 @@
+.bigCards__global {
+  position: relative;
+}
+
+.bigCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+}
+
+.bigCards__card {
+  width: 47%;
+  height: 268px;
+  position: relative;
+  padding: 29px;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.164);
+}
+
+.bigCards__card:hover {
+  scale: 0.97;
+}
+
+.bigCards__background {
+  width: 100%;
+  height: 268px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.bigCards__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.bigCards__logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.blueBigCard .bigCards__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.blueBigCard .bigCards__texts h3 {
+  font-size: 26px;
+}
+
+.whiteBigCard .bigCards__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #454e66;
+}
+.whiteBigCard .bigCards__texts h3 {
+  font-size: 26px;
+  color: black;
+}
+
+.blueBigCard a {
+  width: 100%;
+  background: white;
+  height: 33.42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.322);
+}
+
+.whiteBigCard a {
+  width: 100%;
+  background-image: linear-gradient(#3d7fff, #4b5dff);
+  height: 33.42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.322);
+}
+.blueBigCard a:hover,
+.whiteBigCard a:hover {
+  scale: 1.03;
+}
+
+@media (max-width: 991px) {
+  .bigCards__card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .whiteBigCard a {
+    width: 200px;
+  }
+}

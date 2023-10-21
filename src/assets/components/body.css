@@ -1,0 +1,19 @@
+body {
+  background: white;
+}
+
+.body__global {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 50px 10px 0px 10px;
+}
+.body__internal {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
