@@ -283,6 +283,12 @@ a {
   }
   .tHover {
     transition-duration: 0.3s;
+    display: flex;
+    gap: 5px;
+  }
+  .tHoverIcons {
+    font-size: 20px;
+    opacity: 0.4;
   }
   .tHover:hover {
     scale: 1.02;

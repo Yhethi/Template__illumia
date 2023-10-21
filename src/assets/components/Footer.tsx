@@ -9,7 +9,7 @@ import { BiLogoBehance } from "react-icons/bi";
 
 export const Footer = () => {
   return (
-    <div className="footer__global" data-aos="fade-up">
+    <div className="footer__global">
       <div className="footerUp">
         <img src={logoDash} alt={logoDash} />
         <div className="footer__miniMenu">

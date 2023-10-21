@@ -8,7 +8,19 @@ import { showTemplates } from "../logicJs";
 
 // icons
 import { GoHorizontalRule } from "react-icons/go";
-import { MdKeyboardArrowDown } from "react-icons/md";
+
+import { AiOutlineHome } from "react-icons/ai";
+import { HiOutlinePencilAlt } from "react-icons/hi";
+import { PiSquareDuotone } from "react-icons/pi";
+import { TbHandFinger } from "react-icons/tb";
+import { PiGearLight } from "react-icons/pi";
+import { TbCards } from "react-icons/tb";
+import { RiQuestionAnswerFill } from "react-icons/ri";
+import { BsInputCursorText } from "react-icons/bs";
+import { PiCircleThin } from "react-icons/pi";
+import { BiBell } from "react-icons/bi";
+import { TiTabsOutline } from "react-icons/ti";
+import { PiTagChevron } from "react-icons/pi";
 
 export const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +32,22 @@ export const Header = () => {
       return (
         <>
           <a className="tHover" key={key} href={item.goTo}>
-            <MdKeyboardArrowDown /> {item.text}
+            {item.text === "Home" && isMobile && (
+              <>
+                <AiOutlineHome className="tHoverIcons" />
+              </>
+            )}
+            {item.text === "Changelog" && isMobile && (
+              <>
+                <HiOutlinePencilAlt className="tHoverIcons" />
+              </>
+            )}
+            {item.text === "Licenses" && isMobile && (
+              <>
+                <PiSquareDuotone className="tHoverIcons" />
+              </>
+            )}
+            {item.text}
           </a>
         </>
       );
@@ -33,7 +60,37 @@ export const Header = () => {
           return (
             <>
               <a className="tHover" key={key2} href={item2.goTo}>
-                <MdKeyboardArrowDown /> {item2.text}
+                {item2.text === "Buttons" && isMobile && (
+                  <>
+                    <TbHandFinger className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Inputs" && isMobile && (
+                  <>
+                    <BsInputCursorText className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Avatars" && isMobile && (
+                  <>
+                    <PiSquareDuotone className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Badges" && isMobile && (
+                  <>
+                    <PiCircleThin className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Tooltips" && isMobile && (
+                  <>
+                    <PiGearLight className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Notifications" && isMobile && (
+                  <>
+                    <BiBell className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text}
               </a>
             </>
           );
@@ -48,7 +105,37 @@ export const Header = () => {
           return (
             <>
               <a className="tHover" key={key2} href={item2.goTo}>
-                <MdKeyboardArrowDown /> {item2.text}
+                {item2.text === "Cards" && isMobile && (
+                  <>
+                    <TbCards className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Tables" && isMobile && (
+                  <>
+                    <PiSquareDuotone className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Modals" && isMobile && (
+                  <>
+                    <RiQuestionAnswerFill className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Tabs" && isMobile && (
+                  <>
+                    <TiTabsOutline className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Bread crumbs" && isMobile && (
+                  <>
+                    <PiTagChevron className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text === "Empty states" && isMobile && (
+                  <>
+                    <PiSquareDuotone className="tHoverIcons" />
+                  </>
+                )}
+                {item2.text}
               </a>
             </>
           );
