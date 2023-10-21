@@ -9,22 +9,9 @@ import { showTemplates } from "../logicJs";
 // icons
 import { GoHorizontalRule } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { AiOutlineHome } from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { PiSquareDuotone } from "react-icons/pi";
-import { TbHandFinger } from "react-icons/tb";
-import { PiGearLight } from "react-icons/pi";
-import { TbCards } from "react-icons/tb";
-import { RiQuestionAnswerFill } from "react-icons/ri";
-import { BsInputCursorText } from "react-icons/bs";
-import { PiCircleThin } from "react-icons/pi";
-import { BiBell } from "react-icons/bi";
-import { TiTabsOutline } from "react-icons/ti";
-import { PiTagChevron } from "react-icons/pi";
 
 export const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [menuShow, setMenuShow] = useState(false);
   const [templatesLeft, setTemplatesLeft] = useState(templatesMenu[0]);
   const [templatesRight, setTemplatesRight] = useState(templatesMenu[1]);
 
@@ -78,12 +65,12 @@ export const Header = () => {
     }
   });
   useEffect(() => {
+    setTemplatesLeft(templatesMenu[0]);
+    setTemplatesRight(templatesMenu[1]);
     if (window.innerWidth <= 1200) {
       setIsMobile(true);
     }
-    setTimeout(() => {
-      showTemplates();
-    }, 100);
+
   }, []);
   useEffect(() => {
     showTemplates();

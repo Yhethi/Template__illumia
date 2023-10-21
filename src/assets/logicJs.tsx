@@ -20,11 +20,13 @@ export const showTemplates = () => {
       linea2.style.transform = "rotate(45deg) translateY(0px)";
       menuTemplate.style.transform = "rotateX(0deg)";
       menuTemplate.style.opacity = "1";
+      menuTemplate.style.scale = "1";
       band = true;
     } else {
       linea1.style.transform = "rotate(0deg) translateY(-7px)";
       linea2.style.transform = "rotate(0deg) translateY(7px)";
       menuTemplate.style.opacity = "0";
+      menuTemplate.style.scale = "0";
       band = false;
     }
   });
@@ -32,6 +34,7 @@ export const showTemplates = () => {
     linea1.style.transform = "rotate(0deg) translateY(-7px)";
     linea2.style.transform = "rotate(0deg) translateY(7px)";
     menuTemplate.style.opacity = "0";
+    menuTemplate.style.scale = "0";
     band = false;
   });
 };

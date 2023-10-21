@@ -192,7 +192,7 @@ a {
     top: 81px;
     width: 100%;
     left: 0;
-    height: 388px;
+    height: auto;
     display: flex;
     align-items: start;
     justify-content: start;

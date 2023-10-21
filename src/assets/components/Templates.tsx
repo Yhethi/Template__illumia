@@ -5,7 +5,7 @@ export const Templates = ({
   constantsLeft,
   constantsRight,
   isMobile,
-  key,
+
 }: any) => {
   return (
     <li className="templateShowHover">
@@ -20,7 +20,7 @@ export const Templates = ({
       <div className="menuTemplate">
         <div className="menuTemplate__startHere">
           <h4>START HERE</h4>
-          <div className="menuTemplate__startHere__elements" key={key}>
+          <div className="menuTemplate__startHere__elements">
             {startHere()}
           </div>
         </div>

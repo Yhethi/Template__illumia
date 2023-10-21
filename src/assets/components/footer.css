@@ -1,7 +1,3 @@
-.footer__global {
-  background: red;
-}
-
 .footerUp {
   background: rgb(255, 255, 255);
   height: 133px;
@@ -80,4 +76,20 @@
 }
 .copyright:hover {
   color: #4078ff;
+}
+
+@media (max-width: 1580px) {
+  .footerDown {
+    padding: 20px 10% 20px 10%;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    transform: translateY(-30px);
+  }
+}
+@media (max-width: 583px) {
+  .footerDown {
+    justify-content: center;
+    padding: 20px 10% 20px 10%;
+  }
 }

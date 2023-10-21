@@ -1,5 +1,6 @@
 .tools__global h3 {
   font-size: 1.5rem;
+  z-index: 1;
 }
 .tools__cards {
   display: flex;
