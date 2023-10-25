@@ -56,6 +56,12 @@
 .marketing__card__bottom p {
   color: #696969;
 }
+
+@media (max-width: 991px) {
+  .marketing__card__bottom p {
+    width: 90%;
+  }
+}
 .tools__card__bottom {
   width: 240px;
   height: 82px;
